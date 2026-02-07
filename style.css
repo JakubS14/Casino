@@ -1,0 +1,88 @@
+body
+{
+    background-color: #414141;
+    font-family: sans-serif;
+}
+
+#container
+{
+    margin: auto;
+    margin-top: 20px;
+    width: 1200px;
+    background-color: aliceblue;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+#menu
+{
+    width: 350px;
+    background-color: rgb(41, 41, 41);
+}
+#money
+{
+    margin-top: 30px;
+}
+.kasa
+{
+    text-align: center;
+    background-color: azure;
+    margin: auto;
+    margin-top: 15px;
+    width: 225px;
+    height: 32px;
+    padding: 2px;
+}
+.kasa2
+{
+    text-align: center;
+    background-color: azure;
+    margin: auto;
+    margin-top: 15px;
+    width: 225px;
+    height: 32px;
+}
+input
+{
+    text-align: center;
+    background-color: azure;
+    width: 225px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#game
+{
+    width: 1250px;
+    background-color: #878787;
+}
+#plansza
+{
+    margin: auto;
+    width: 750px;
+    height: 750px;
+    background-color: #414141;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mina
+{
+    background-color: #676767;
+    width: 140px;
+    height: 140px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.lose
+{
+    background-color: red;
+}
+.win
+{
+    background-color: green;
+}
