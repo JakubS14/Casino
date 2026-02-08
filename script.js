@@ -14,7 +14,7 @@ function play()
     if(gra!=1)
     {
     stawka = Number(document.getElementById("zaklad").value);
-    if(stawka<=kasa)
+    if(stawka<=kasa && stawka >= 0)
     {
     kasa = kasa - stawka;
     document.getElementById("money").innerHTML = kasa;
