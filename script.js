@@ -13,33 +13,36 @@ function play()
 {   
     if(gra!=1)
     {
-    stawka = Number(document.getElementById("zaklad").value);
-    if(stawka<=kasa)
-    {
-        if(stawka>0){
-        kasa = kasa - stawka;
-        document.getElementById("money").innerHTML = kasa;
-        x = Math.floor(Math.random()*25)+1;
-        reset = 1;
-        while(reset <= 25)
+        stawka = Number(document.getElementById("zaklad").value);
+        if(stawka<=kasa)
         {
-        document.getElementById(reset).classList.remove("win");
-        document.getElementById(reset).classList.remove("lose");
-        reset++
-        }
-        koniec = 0;
-        gra = 1
-        mnoznik = 0;
-        }
-        else
-            alert("Za mały zakład");
+            if(stawka>0)
+            {
+                kasa = kasa - stawka;
+                document.getElementById("money").innerHTML = kasa;
+                x = Math.floor(Math.random()*25)+1;
+                reset = 1;
+                    while(reset <= 25)
+                    {
+                    document.getElementById(reset).classList.remove("win");
+                    document.getElementById(reset).classList.remove("lose");
+                    reset++
+                    }
+                koniec = 0;
+                gra = 1
+                mnoznik = 0;
+            }
+            else
+            {
+                alert("Za mały zakład");
+            }
     }
     
     else
     {
         alert("Zakład przekracza twój budżet")
     }
-    }
+    
 }
 function m(nr)
 {
