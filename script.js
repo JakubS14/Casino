@@ -14,21 +14,25 @@ function play()
     if(gra!=1)
     {
     stawka = Number(document.getElementById("zaklad").value);
-    if(stawka<=kasa && stawka >= 0)
+    if(stawka<=kasa)
     {
-    kasa = kasa - stawka;
-    document.getElementById("money").innerHTML = kasa;
-    x = Math.floor(Math.random()*25)+1;
-    reset = 1;
-    while(reset <= 25)
-    {
-        console.log(reset)
+        if(stawka>0){
+        kasa = kasa - stawka;
+        document.getElementById("money").innerHTML = kasa;
+        x = Math.floor(Math.random()*25)+1;
+        reset = 1;
+        while(reset <= 25)
+        {
         document.getElementById(reset).classList.remove("win");
         document.getElementById(reset).classList.remove("lose");
         reset++
-    }
-    koniec = 0;
-    gra = 1
+        }
+        koniec = 0;
+        gra = 1
+        mnoznik = 0;
+        }
+        else
+            alert("Za mały zakład";
     }
     
     else
