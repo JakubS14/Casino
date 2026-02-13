@@ -32,7 +32,7 @@ function play()
         mnoznik = 0;
         }
         else
-            alert("Za mały zakład";
+            alert("Za mały zakład");
     }
     
     else
